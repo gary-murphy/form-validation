@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyForm Validator</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <form id="form">
+            <h1 id="form-title" class="form-title">Register here</h1>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="user" placeholder="Enter username">
+                <small class="errorMsg">Error message Username</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter email">
+                <small class="errorMsg">Error message Email</small>
+            </div>
+            
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="pw" placeholder="Enter password">
+                <small class="errorMsg">Error message password</small>
+            </div>
+            <div class="form-control">
+                <label for="password2">Password2</label>
+                <input type="password" id="password2" name="pw2" placeholder="Re-Enter password to confirm">
+                <small class="errorMsg">Error message password2</small>
+            </div>
+            <button type="submit">Submit</button>
+            <h2 id="success-msg">...</h2>
+        </form>
+    </div>
+    
+    <script src="./app/validation.js"></script>
+</body>
+</html>
