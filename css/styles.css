@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    --color-success: green;
+    --color-error: red;
+    --button-radius: 7.5px;
+    --input-radius: 4px;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #caf0f8;
+    color: #03045e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    outline: none;
+    border-radius: 7.5px;
+    background-color: #ade8f4;
+    box-shadow: 5px 5px 5px #3d5a80;
+    padding: 30px;
+    padding-bottom: 40px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    color: var(--color-error);
+}
+
+#success-msg {
+    color: var(--color-success);
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+
+}
+
+.form-control input {
+    height: 1.5rem;
+    padding: 5px 0px 5px 5px;
+    font-size: 15px;
+}
+
+.form-control.success input {
+    border: 2px solid var(--color-success);
+}
+
+.form-control small {
+    width: 100%; 
+    color: var(--color-error);
+    visibility: hidden;
+}
+
+.form-control small.error {
+    visibility: visible;
+}
+
+input {
+    border-top-left-radius: var(--input-radius);
+    border-top-right-radius: var(--input-radius);
+    border-bottom-right-radius: var(--input-radius);
+    border-bottom-left-radius: var(--input-radius);
+    border: 2px solid #fff;
+    margin-top: 7px;
+    width: 97%;
+}
+
+input.success {
+    border: 2px solid var(--color-success);
+}
+
+input.error-border {
+    border: 2px solid var(--color-error);
+}
+
+form button {
+    margin-top: 5px;
+    background-color: #00b4d8;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    border-top-left-radius: var(--button-radius);
+    border-top-right-radius: var(--button-radius);
+    border-bottom-right-radius: var(--button-radius);
+    border-bottom-left-radius: var(--button-radius);
+    box-shadow: 5px 5px 5px #3d5a80;
+}
+
+form button:hover {
+    box-shadow: 2px 2px 3px #3d5a80;
+    cursor: pointer;
+}
